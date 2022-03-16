@@ -1,0 +1,28 @@
+<ul class="list-group list-group-flush " style="width: 100%;">
+    <li class="list-group-item header-contenido header-color" >
+      <nav class="header-sidebar">
+          <a (click)="infoContacto()" href="#">
+              <img src="../assets/perfil fotos/alex-daddario-ig-10.jpg" alt="Avatar" class="avatar1">
+          </a>  
+          
+          <p>Alexandra</p>                 
+          <nav >
+           <a style="margin-right:30px;" class="link-secondary" href="#"> <i   class="fa-solid fa-magnifying-glass"></i></a>
+            <label style="margin-right:30px;" class="dropdown">
+              <a style="padding-left: 5px; padding-right: 5px;"  class=" link-secondary " href="#" role="link" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <i  class=" fa-solid fa-ellipsis-vertical fa-lg"></i>
+              </a>
+            
+              <ul style="font-size: 13px;" class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a (click)="infoContacto()"  class="dropdown-item" href="#">Info del contacto</a>
+                </li>
+                <li><a id="cerrarSesion" class="dropdown-item" href="#">Cerrar chat</a></li>
+                <li><a class="dropdown-item" href="#">Silenciar notificaciones</a></li>
+                <li><a class="dropdown-item" href="#">Vaciar mensajes</a></li>
+                <li><a class="dropdown-item" href="#">Eliminar chat</a></li>
+              </ul>
+            </label>
+          </nav>
+      </nav>
+    </li>
+  </ul>

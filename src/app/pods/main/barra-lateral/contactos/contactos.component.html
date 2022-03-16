@@ -1,0 +1,22 @@
+<ul class="list-group scroll-sidebar" >
+    <li class="list-group-item lista" *ngFor="let cont of misContactos" >
+      <!-- Logo -->
+      <div style="float: left;">
+        <a id="contacto" href="#">
+          <img [src]="cont.img" alt="Avatar" class="avatar1">
+      </a> 
+      </div>
+    <!-- Nombre, cheched icon , msg-->
+      <div >
+        <div style="padding-left: 25px; ">
+          <div>{{cont.nombre}} </div>
+          <!-- <span><i class="fa-solid fa-check-double fa-2xs"></i></span> -->
+          <small style="width: 90px;">{{cont.texto | slice:0:7}}...</small>
+        </div>
+      </div>
+
+      <div style="padding-left: 60%; font-size: 13px;">
+        {{cont.fecha}}
+      </div>
+    </li>
+  </ul>

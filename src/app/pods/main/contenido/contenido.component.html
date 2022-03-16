@@ -1,0 +1,29 @@
+<aside class="contenido" id="fondop" >
+    <!-- Header -->
+    <app-header></app-header>
+
+    <!-- Chat -->
+    <div class="contenido-msg ">
+      <app-chat [mensage]="msg"></app-chat>
+    </div>
+
+    <!-- Escribir Mensajes -->
+    <div>
+      <ul class="list-group list-group-flush " style="width: 100%;">
+        <li class="list-group-item header-contenido header-color">
+        
+          <div class="header-sidebar">
+            <!-- <a style="margin-right:30px;"  class="link-secondary" href="#"><i class="fa-solid fa-face-smile fa-lg"></i></a> -->
+            
+            <a style="margin-right:30px;"  class="link-secondary" href="#"><i class="fa-solid fa-paperclip fa-lg"></i></a>
+  
+            <div class="input-group">
+              <input #msgs [(ngModel)]="vaciar"(keydown.enter)="enviar()" type="text" class="form-control" style="padding-top: 6px;">
+            </div>
+            <a style="margin-left:20px; margin-right: 10px;" href="#" class="link-secondary"><i  class="fa-solid fa-microphone fa-lg"></i></a>
+         </div>
+        </li>
+  
+      </ul>   
+    </div>
+  </aside>

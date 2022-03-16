@@ -1,1 +1,357 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    /* Tema claro */
+    --fondo1-azul-claro: #127c9cbb;
+    --fondo2-azul-claro: #c1c2ba9f;
+    --headers--claro: #023d4ebb;
+    --headers--texto-claro: black;
+    --tarjeta-menu-perfil-claro: #ffffff;
+    --lista-contactos-claro: #ffffff;
+    --chat-claro: transparent;
+    
+    /* Tema oscuro */
+    --fondo1-azul-oscuro: #000000;
+    --fondo2-azul-oscuro: #2c2a2a;
+    --headers--oscuro: rgb(53, 54, 61);
+    --headers--texto-oscuro: white;
+    --tarjeta-menu-perfil-oscuro: #000000;
+    --lista-oscuro: #464646;
+    --chat-oscuro: #00000094;
+}
+body{
+    /* background-color: aqua; */
+    margin: 0; 
+   font-family:Trebuchet MS;
+}
+
+.fondo1{
+    position: relative;
+    z-index: 3;
+    height: 127px;
+}
+.fondo2{
+    position: relative;
+    z-index: 2;
+    height: 594px;
+    margin: 0;
+}
+#menu{
+    position: absolute;
+    /* ///////////////////cambiar el index a 6    */
+   z-index: 0;
+   position: absolute;
+
+   width: 452px;
+   height: 690px;
+   margin-left: 3.1%;
+   margin-top: 15px;
+   margin-bottom: 5px;
+   margin-right: 20px;
+}
+#menu a{
+    text-decoration: none;
+}
+
+#info-contacto{
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    width: 452px;
+    height: 690px;
+    margin-left: 66.7%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+#estados{
+    position: absolute;
+     /* ///////////////////cambiar el index a 6    */
+    z-index: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #252525;;
+}
+#estados aside{
+    float: left;
+     font-size: 12px;
+    width: 26%;
+    height: 665px;
+    border: 0px;
+    border-radius: 2px;
+    margin-left: 70px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #464646;
+    color: #ffffff;
+}
+#estados span{
+    display: flex;
+    align-items: flex-start;
+
+   padding-top: 40px;
+   padding-left: 25px;
+   padding-bottom: 20px;
+   border-bottom: 1px inset rgb(110, 109, 109);
+}
+#perfil-usuario{
+    position: absolute;
+
+    width: 452px;
+    height: 690px;
+    margin-left: 3.1%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+#ver-imagenes{
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #fffdfd;
+}
+#ver-imagenes img{
+   width: 600px;
+   
+}
+.imagenAmpliada{
+    display: flex;
+    justify-content: center;
+}
+.header{
+    display: flex;
+     align-items: flex-end;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    height: 112px;
+}
+.header-perfil h5{
+    padding-left: 30px;
+}
+.header-color{
+
+}
+.lista-menu-color{
+
+}
+.cont-menu-color{
+
+}
+.subir-foto{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    padding: 50px;
+}
+.avatar2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.cambiar-nombre{
+    width: 452px;
+    height: 130px;
+    border-radius: 0;
+}
+.info-inicio{
+    position: absolute;
+    width: 63.7%;
+    height: 690px;
+    margin-left: 32.4%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0dfdf;
+
+}
+.principal{
+    position: absolute;
+    z-index: 4;
+    width: 93%;
+    height: 690px;
+    margin-left: 3.1%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    border-radius: 0;
+}
+.header-sidebar{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    
+}
+.avatar1 {
+  
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+.sidebar{
+    width: 450px;
+    height: 60px;
+    border: 0px;
+    
+}
+
+.header-contenido{
+    width: 100%;
+    height: 60px;
+ 
+}
+.busqueda{
+    padding-top: 15px;
+    padding-right: 32px;
+    padding-left: 45px;
+    padding-bottom: 15px;
+}
+
+.contenido{
+    margin-left: 450px;
+    background-image: url('https://wallpaperaccess.com/full/1567846.jpg');
+}
+
+.contenido-msg{
+    height: 568px;
+    width: 100.1%;
+    /* background-color: rgba(145, 111, 136, 0.287); */
+    /* background-image: url('https://cdn.create.vista.com/api/media/medium/461242700/stock-photo-abstract-background-light-colors-poly?token=') */
+}
+.lista{
+    display: flex; height: 71.24px; justify-content: baseline;
+}
+.listaEstado{
+    display: flex; height: 71.24px; justify-content: baseline; background-color: var(--lista-oscuro); color: white;
+}
+
+.scroll-sidebar{
+    font-size: 15px;
+    width: 100%;
+    height: 568px;
+    overflow: auto;
+}
+.scroll-contenido{
+    height: 568px;
+    width: 100%;
+  
+    overflow: auto;
+}
+
+
+/* /////////////////////////////////////////////////////// */
+/*                         Chat                             */
+  
+    #chat{
+    padding-left:0;
+    margin:0;
+    list-style-type:none;
+  
+    }
+    #chat li{
+    padding:0px 110px;
+    padding-top: 5px;
+    }
+    #chat h2,#chat h3{
+    display:inline-block;
+    font-size:13px;
+    font-weight:normal;
+    }
+    #chat h3{
+   
+    }
+    #chat .entete{
+    margin-bottom:5px;
+    }
+    #chat .message{
+    padding:10px;
+    line-height:30px;
+    max-width:80%;
+    display:inline-block;
+    text-align:left;
+    border-radius:25px;
+    font-size: 16px;
+    }
+    #chat .me{
+    text-align:right;
+    }
+    #chat .you .message{
+    background-color:#fbfffcd8;
+    }
+    #chat .me .message{
+    background-color:#affaf7de;
+    }
+    #chat .triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    }
+    #chat .you .triangle{
+    border-color: transparent transparent #fbfffcc4 transparent;
+    margin-left:23px;
+    }
+    #chat img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #chat .imagen:hover {
+        background: url('./assets/imgs/open-in-window.png') no-repeat ;
+        background-size: 30px;
+        background-position: center;
+                
+    }
+
+    /* #chat .me .triangle{
+    border-color: transparent transparent #7ec6f3e3 transparent;
+    margin-left:95%;
+    } */
+    
+   /* //////////////////////////////////////////////////////////////////////////////// */
+/* ////////Resize//////////// */
+   @media screen and (max-width: 1200px) {
+
+    .principal{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+  
+    #perfil-usuario{
+        width: 452px;
+        margin: 0;
+    }
+    .cambiar-nombre{
+        width: 450px;
+    }
+    #estados{
+        height: 689px;
+    }
+    #estados aside{
+        height: 630px;
+    }
+    #menu{
+        width: 451px;
+        margin: 0;
+    }
+    #info-contacto{
+        width: 451px;
+        margin: 0;
+        margin-left: 60.7%;
+    }
+    .info-inicio{
+        margin-left: 450px;
+        margin-top: 0;
+        margin-bottom: 0px;
+        width: 61.3%;
+    }
+}

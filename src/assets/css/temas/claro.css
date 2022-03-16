@@ -1,0 +1,52 @@
+.fondo1{
+    background-color: var(--fondo1-azul-claro);
+}
+.fondo2{
+    background-color: var(--fondo2-azul-claro);
+}
+
+#menu{
+   background-color: var(--tarjeta-menu-perfil-claro);
+}
+#info-contacto{
+    background-color: white;
+    color: black
+}
+#perfil-usuario{
+    background-color: var(--tarjeta-menu-perfil-claro);;
+}
+.scroll-contenido{
+    background-color: var(--chat-claro);
+}
+#chat .message{
+    color:rgba(29, 25, 25, 0.856);
+    }
+.header{
+    background-color: var(--headers--claro);
+    color: var(--tarjeta-menu-perfil-claro);
+
+}
+.cambiar-nombre{
+    background-color: rgb(236, 236, 236)
+}
+.header-color{
+    background-color: rgb(236, 236, 236); 
+    
+    color: var(--headers--texto-claro);
+}
+.principal{
+    background-color: white;
+}
+.busqueda{
+    background-color: white;
+}
+.lista{
+    background-color: var(--lista-contactos-claro);
+}
+.lista-menu-color{
+    background-color: white;
+}
+.cont-menu-color a{
+    background-color: white;
+    color: black;
+}
